@@ -1,4 +1,3 @@
-# BLP-demand-estimation-model
 # BLP Demand Estimation: US Automobile Market (1971-1990)
 
 Estimating consumers' willingness to pay (WTP) for car specs and price elasticities using the Berry, Levinsohn & Pakes (1995) logit-IV approach in R.
@@ -37,6 +36,12 @@ Estimating consumers' willingness to pay (WTP) for car specs and price elasticit
 - Classic BLP (1995) US car dataset (`productData_cars` from the `BLPestimatoR` R package): 2217 car models, 20 yearly markets (1971-1990), 26 manufacturers, no missing values.
 - Variables: `price` ($1000s, 1983 $), `hpwt` (hp per 10 lbs of weight), `air` (AC dummy), `mpg` (tens of miles per gallon), `space` (length x width), `share` (market share), `cdid` (market/year), `firmid` (manufacturer).
 - Each year ~89% of households don't buy a new car, which is taken as the outside option.
+
+| Average price by market (year) | Distribution of prices |
+|---|---|
+| ![Average price by market](<Avg price vs market.png>) | ![Distribution of prices](<Frequency distribution of prices.png>) |
+
+*Average price rises from ~$9k in 1971 to $14-17k by the late 1980s, and prices are right-skewed with most cars at $5-12k and a long luxury tail.*
 
 ## Method
 
